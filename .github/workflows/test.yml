@@ -1,7 +1,7 @@
 name: Repository Dispatch ${{ github.event.client_payload.sha }}
 on:
   repository_dispatch:
-    types: [rspec]
+    types: [my-event]
 jobs:
   myEvent:
     runs-on: ubuntu-latest
