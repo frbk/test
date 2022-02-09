@@ -31,4 +31,4 @@ jobs:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
           repository: frbk/test
           event-type: rspec-tests
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "branch": "test"}'
