@@ -1,4 +1,4 @@
-name: Repository Dispatch
+name: Repository Dispatch ${{ github.event.client_payload.sha }}
 on:
   repository_dispatch:
     types: [my-event]
