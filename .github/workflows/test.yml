@@ -1,4 +1,4 @@
-name: Repository Dispatch ${{ github.event.client_payload.sha }}
+name: Repository Dispatch
 on:
   repository_dispatch:
     types: [rspec-tests]
