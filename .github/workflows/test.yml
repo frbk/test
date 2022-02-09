@@ -3,7 +3,7 @@ on:
   repository_dispatch:
     types: [rspec-tests]
 jobs:
-  myEvent:
+  rspec-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
