@@ -32,3 +32,9 @@ jobs:
           repository: frbk/test
           event-type: rspec-tests
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "branch": "master"}'
+  deploy-prod:
+    runs-on: "ubuntu-latest"
+    environment: "prod"
+    needs: [build]
+    steps:
+      - run: echo ${{ github.event.client_payload.sha }}

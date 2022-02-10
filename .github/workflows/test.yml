@@ -2,6 +2,9 @@ name: Rspec tests
 on:
   repository_dispatch:
     types: [rspec-tests]
+env:
+  test: ${{ github.event.client_payload.sha }}
+  
 jobs:
   rspec-tests:
     runs-on: ubuntu-latest
